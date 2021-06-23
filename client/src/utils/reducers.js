@@ -1,5 +1,5 @@
 import { useReducer } from "react";
-import { startSession } from "../../../server/config/connection";
+
 import {
     UPDATE_PRODUCTS,
     UPDATE_CATEGORIES,
