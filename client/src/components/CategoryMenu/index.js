@@ -11,7 +11,7 @@ function CategoryMenu() {
     return state
   });
 
-  const dispatch = useDispatch;
+  const dispatch = useDispatch();
 
   const { loading, data: categoryData } = useQuery(QUERY_CATEGORIES);
 
