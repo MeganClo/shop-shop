@@ -5,7 +5,8 @@ import { QUERY_CHECKOUT } from '../../utils/queries';
 import { useLazyQuery } from '@apollo/client';
 import { loadStripe } from '@stripe/stripe-js';
 import { idbPromise } from "../../utils/helpers";
-import { useStoreContext } from '../../utils/GlobalState';
+import { useSelector, useDispatch, } from 'react-redux';
+// import { useStoreContext } from '../../utils/GlobalState';
 import { TOGGLE_CART, ADD_MULTIPLE_TO_CART } from "../../utils/actions";
 import './style.css';
 
@@ -13,9 +14,12 @@ const stripePromise = loadStripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
 
 
 const Cart = () => {
-    const [getCheckout, { data }] = useLazyQuery(QUERY_CHECKOUT);
+    
+    const state = useSelector((state) => {
+        return state
+    });
 
-    const [state, dispatch] = useStoreContext();
+    const dispatch = useDispatch;
 
     useEffect(() => {
         async function getCart() {
