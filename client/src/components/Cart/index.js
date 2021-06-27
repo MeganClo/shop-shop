@@ -21,6 +21,8 @@ const Cart = () => {
 
     const dispatch = useDispatch;
 
+    const [getCheckout, { data }] = useLazyQuery(QUERY_CHECKOUT);
+
     useEffect(() => {
         async function getCart() {
             const cart = await idbPromise('cart', 'get');
