@@ -13,7 +13,7 @@ function ProductItem(item) {
     return state
   });
 
-  const dispatch = useDispatch;
+  const dispatch = useDispatch();
 
   const { cart } = state;
 
