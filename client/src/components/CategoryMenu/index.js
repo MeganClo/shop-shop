@@ -10,6 +10,7 @@ function CategoryMenu() {
   const state = useSelector((state) => {
     return state
   });
+  
 
   const dispatch = useDispatch();
 
