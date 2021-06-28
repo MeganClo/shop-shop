@@ -1,7 +1,7 @@
 # 🛍️ Shop-Shoppe
 
 ## Description
-This is an E-commerce site where a user can shop for goods and purchase them via stripe. * Please note this application is purely for learning purposes-no good are actually for sale. This application was built mainly to learn redux and state.
+This is an E-commerce site where a user can shop for goods and purchase them via stripe. * Please note this application is purely for learning purposes-no goods are actually for sale. This application was built mainly to learn redux and state.
 
 ## Screenshot of Live Link
 ![shop](https://user-images.githubusercontent.com/77699944/123576689-4863f800-d787-11eb-9693-b9ab74eb2ccd.jpg)
